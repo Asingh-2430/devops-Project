@@ -13,7 +13,7 @@ export default function CodeConverter() {
     const handleConvert = async () => {
         setLoading(true);
         try {
-            const response = await axios.post('http://localhost:5000/convert', {
+            const response = await axios.post('http://localhost:5002/convert', {
                 inputCode,
                 sourceLang,
                 targetLang
